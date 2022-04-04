@@ -11,7 +11,7 @@ const Review = ({ review }) => {
         <span>Ratting: {ratting}</span>
         <h3>{name}</h3>
         <h5><small>{country}</small></h5>
-        <p title={comments}>{comments.slice(0, 90) + '...'}</p>
+        <p title={comments}>{comments}</p>
       </div>
     </Col>
   );
