@@ -9,9 +9,9 @@ const ChartsOne = () => {
     <Container>
       <Row>
         <Col>
-          <h3 className='text-center'>Investment Vs Revenue</h3>
+          <h3 className='text-center'> Sales</h3>
           <LineChart className='m-auto' width={600} height={400} data={data}>
-            <Line dataKey={'sell'}></Line>
+            <Line dataKey={'sell'} fill='#19315d'></Line>
             <XAxis dataKey={'month'}></XAxis>
             <CartesianGrid stroke="#ccc" />
             <Tooltip></Tooltip>

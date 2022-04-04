@@ -1,3 +1,21 @@
+.banner-content h1{
+  font-size: 58px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #454545;
+}
+
+.banner-content h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #057ad4;
+}
+
+.spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
 .see-all-btn {
   text-align: center;
   padding: 10px 20px;

@@ -11,8 +11,8 @@ const ChartTwo = () => {
         <Col>
           <h3 className='text-center'>Investment Vs Revenue</h3>
           <BarChart className='m-auto' width={600} height={400} data={data}>
-            <Bar dataKey="revenue" fill="#8884d8" />
-            <Bar dataKey="investment" fill="##a91d1d" />
+            <Bar dataKey="revenue" fill="#19315d" />
+            <Bar dataKey="investment" fill="#057ad4" />
             <CartesianGrid stroke="#ccc" />
             <Tooltip></Tooltip>
             <Legend></Legend>

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Spinner } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import useReview from '../../hooks/useReview';
 import Review from '../Review/Review';
 import './Home.css'
 
 const Home = () => {
-  const [reviews, setReviews] = useReview();
+  const [reviews, setReviews, loading] = useReview();
 
   const total = reviews.slice(0, 3);
   const navigate = useNavigate()
@@ -16,7 +16,7 @@ const Home = () => {
         <Container>
           <Row>
             <Col className='d-flex align-items-center'>
-              <div>
+              <div className='banner-content'>
                 <h1>Microsoft Xbox </h1>
                 <h2>Series XWireless Controller Shock Blue</h2>
                 <p>Experience the modernized design of the Xbox Wireless Controller in Shock Blue, featuring sculpted surfaces and refined geometry for enhanced comfort during Gameplay with battery usage up to 40 hours. Stay on target with a hybrid D-pad and textured grip on the triggers, bumpers, and back-case. </p>
@@ -33,16 +33,21 @@ const Home = () => {
 
       <section className='mb-5'>
         <Container>
+
           <h1 className='text-center'>Customer Feedback & Reviews({total.length})</h1>
           <Row>
             <Col>
-              <Row> {
-                total.map(review => <Review
-                  key={review.id}
-                  review={review}
-                ></Review>)
+              {
+                loading ? <Spinner animation="border" className='spinner'></Spinner> :
+                  <Row> {
+                    total.map(review => <Review
+                      key={review.id}
+                      review={review}
+                    ></Review>)
+                  }
+                  </Row>
               }
-              </Row>
+
             </Col>
             <div className='text-center'>
               <button onClick={() => navigate('/reviews')} className='see-all-btn'>See All Reviews</button>
