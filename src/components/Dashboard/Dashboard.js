@@ -1,9 +1,15 @@
+
 import React from 'react';
+import ChartsOne from '../Charts/Charts';
+import ChartTwo from '../Charts/ChartTwo';
+
 
 const Dashboard = () => {
+
   return (
-    <div>
-      <h1>This is Dashboar Page.</h1>
+    <div className='d-flex mt-5 jus'>
+      <ChartsOne></ChartsOne>
+      <ChartTwo></ChartTwo>
     </div>
   );
 };

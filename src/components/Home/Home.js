@@ -20,11 +20,13 @@ const Home = () => {
                 <h1>Microsoft Xbox </h1>
                 <h2>Series XWireless Controller Shock Blue</h2>
                 <p>Experience the modernized design of the Xbox Wireless Controller in Shock Blue, featuring sculpted surfaces and refined geometry for enhanced comfort during Gameplay with battery usage up to 40 hours. Stay on target with a hybrid D-pad and textured grip on the triggers, bumpers, and back-case. </p>
+                <button className='learn-more-btn'>Learn More</button>
               </div>
             </Col>
             <Col>
               <img className='img-fluid mt-3' src="https://media.gamestop.com/i/gamestop/11108955/Microsoft-Xbox-Series-X-Wireless-Controller-Shock-Blue?$pdp2x$" alt="" />
             </Col>
+
           </Row>
         </Container>
       </section>
