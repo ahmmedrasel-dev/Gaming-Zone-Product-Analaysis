@@ -12,3 +12,4 @@ The Project Live Link is Here: [Click Here To Visit Website](https://gamingzone-
 -  Create Custom Hook Loading Review Data form JSON File.
 -  Deploy Loading using Conditional Rendering in Home Page and Review Page.
 -  Use Nested Routing to Display Individual Blogs Item.
+-  Added About Page.
