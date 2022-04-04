@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import CustomLink from '../CustomLink/CustomLink';
 import './Header.css'
 
 const Header = () => {
   return (
     <div className='nav-bar'>
-      <Link className='nav-item' to='/'>Home</Link>
-      <Link className='nav-item' to='/dashboard'>Dashboard</Link>
-      <Link className='nav-item' to='/reviews'>Reviews</Link>
-      <Link className='nav-item' to='/blogs'>Blogs</Link>
-      <Link className='nav-item' to='/about'>About</Link>
+      <CustomLink className='nav-item' to='/'>Home</CustomLink>
+      <CustomLink className='nav-item' to='/dashboard'>Dashboard</CustomLink>
+      <CustomLink className='nav-item' to='/reviews'>Reviews</CustomLink>
+      <CustomLink className='nav-item' to='/blogs'>Blogs</CustomLink>
+      <CustomLink className='nav-item' to='/about'>About</CustomLink>
     </div>
   );
 };
