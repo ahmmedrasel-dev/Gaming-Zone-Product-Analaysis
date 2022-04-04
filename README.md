@@ -1,6 +1,6 @@
 # Gaming Zone Review Website
 
-The Project Live Link is Here: [Click Here To Visit Website](https://github.com/facebook/create-react-app).
+The Project Live Link is Here: [Click Here To Visit Website](https://gamingzone-reveiw.netlify.app/).
 
 ## Project Task
 
