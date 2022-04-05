@@ -19,7 +19,7 @@ const Review = ({ review }) => {
           readonly
 
         ></Rating>
-        <span>({ratting})</span>
+        <span>({ratting}) </span>
         <h3>{name}</h3>
         <h5><small>{country}</small></h5>
         <p title={comments}>{comments}</p>
